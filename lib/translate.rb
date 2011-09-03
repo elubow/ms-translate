@@ -15,7 +15,9 @@ module Microsoft
       self.languages = self.languages.nil? ? self.http.send_get_languages : self.languages
     end
 
-    def translate(text, from_lang, to_lang)
+    def translate(text, opts={})
+      from_lang = opts[:from].to_s
+      to_lang = opts[:to].to_s
       self.translation = self.http.send_translate(text,from_lang,to_lang)
     end
 
