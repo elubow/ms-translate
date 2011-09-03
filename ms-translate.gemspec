@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name              = "ms-translate"
   s.version           = 0.1
   s.date              = Time.now.strftime('%Y-%m-%d')
-  s.summary           = ""
+  s.summary           = "Use the Microsoft translation engine"
   s.homepage          = "https://github.com/elubow/ms-translate"
   s.email             = "eric@lubow.org"
   s.authors           = [ "Eric Lubow" ]
@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency "nokogiri"
 
   s.description = <<description
+  Translate between languages using the Microsoft Translation services.
 description
 end
