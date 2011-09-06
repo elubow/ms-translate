@@ -14,7 +14,7 @@ To obtian a Microsoft API key, go [here](http://www.bing.com/developers/createap
     t = Microsoft::Translate.new(msappid)
 
     # Get available languages
-    g.get_languages
+    t.get_languages
 
     # Detect the language
     t.detect('This is a test of English')
